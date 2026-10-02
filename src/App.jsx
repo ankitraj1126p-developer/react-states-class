@@ -1,4 +1,7 @@
 import Counter from "./counter.jsx";
+import Login,{Profile,Setting} from './UserComponent.jsx';
+
+import ToDo from './ToDo.jsx';
 
 function App() {
 
@@ -7,9 +10,15 @@ function App() {
     <div>
       <Counter />
 
-      <Fruits/>
+      {/* <Fruits/> */}
 
-      <h1>Hello, I am Alexander</h1>
+      <Login />
+      <Profile />
+      <Setting />
+
+      <ToDo/>
+
+      <h1>Importing and Exporting Components</h1>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -30,6 +39,8 @@ function Fruits(){
     <h2>Mango</h2>
   )
 }
+
+
 
 
 
