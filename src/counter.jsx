@@ -1,12 +1,17 @@
-function App(){
+import {useState} from 'react';
 
+
+function  Counter(){
+  const [count,setCount] =useState(0)
   return(
 
     <div>
 
-      <h3>Header File</h3>
+      <h1>Counter : {count}</h1>
+      <button onClick={()=>setCount(count+1)}>Update Counter</button>
     </div>
-  )
 
+  )
 }
-export default App
+
+export default Counter;
